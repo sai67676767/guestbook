@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гостевая книга</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📖 Гостевая книга</h1>
+        <p class="subtitle">Оставьте своё сообщение</p>
+
+        <!-- Форма добавления сообщения -->
+        <form id="message-form" class="message-form">
+            <input 
+                type="text" 
+                id="name-input" 
+                placeholder="Ваше имя" 
+                maxlength="100" 
+                required
+            >
+            <textarea 
+                id="text-input" 
+                placeholder="Ваше сообщение..." 
+                rows="4" 
+                required
+            ></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+
+        <!-- Список сообщений -->
+        <div id="messages-list" class="messages-list">
+            <p class="loading">Загрузка сообщений...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
